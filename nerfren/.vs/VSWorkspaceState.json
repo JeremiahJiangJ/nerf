@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\data",
+    "\\load",
+    "\\models",
+    "\\options",
+    "\\scripts",
+    "\\scripts\\nerf",
+    "\\scripts\\nerfren",
+    "\\utils"
+  ],
+  "SelectedNode": "\\scripts\\nerfren\\train_closeup.sh",
+  "PreviewInSolutionExplorer": false
+}

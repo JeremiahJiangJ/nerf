@@ -1,0 +1,17 @@
+*.log
+datasets/
+pmd/
+model-best*
+*.pth
+*.db
+*.png
+*.jpg
+*.gif
+*.mp4
+/nerfren/runs
+/nerfren/runs*/
+/nerfren/results
+/nerfren/results*/
+/nerfren/checkpoints
+/nerfren/checkpoints*/
+COLMAP-3.8-windows-cuda/
