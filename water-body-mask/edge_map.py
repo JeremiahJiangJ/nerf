@@ -3,7 +3,7 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
-image_name = "kentridgeparkpond1"
+image_name = "kentridgeparkpond3"
 image_path = f"./images/{image_name}.jpg"
 hsv_savepath = "./hsv/"
 grayscale_savepath = "./grayscale/"
@@ -31,8 +31,8 @@ ax[0].imshow(img, cmap='gray')
 ax[1].imshow(edge, cmap='gray')
 plt.show()
 
-contours = cv2.findContours(img_grayscale, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)[0]
-ccs = np.zeros(img_grayscale.shape, dtype = np.uint8)
-for i, contour in enumerate(contours):
-    cv2.drawContours(ccs, contours, i, color = 255, thickness=-1)
-cv2.imwrite("./contours.jpg", ccs)
+#contours = cv2.findContours(img_grayscale, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)[0]
+#ccs = np.zeros(img_grayscale.shape, dtype = np.uint8)
+#for i, contour in enumerate(contours):
+#    cv2.drawContours(ccs, contours, i, color = 255, thickness=-1)
+#cv2.imwrite("./contours.jpg", ccs)

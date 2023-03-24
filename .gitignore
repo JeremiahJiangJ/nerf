@@ -3,6 +3,7 @@ datasets/
 pmd/
 model-best*
 .vs/
+*.MOV
 *.pth
 *.db
 *.png
