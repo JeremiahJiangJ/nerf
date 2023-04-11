@@ -31,21 +31,21 @@ def main():
 
 	print(f"Generating optical flow for {video_name} using {algorithm}")
 	if algorithm == "lk_sparse":
-		frames, size = lucas_kanade_method(video_root, video_name)
+		frames, flows, size = lucas_kanade_method(video_root, video_name)
 
 	elif algorithm == "lk_dense":
 		method = cv2.optflow.calcOpticalFlowSparseToDense
-		frames, size = dense_optical_flow(method, video_root, video_name, to_gray=True)
+		frames, flows, size = dense_optical_flow(method, video_root, video_name, to_gray=True)
 
 	elif algorithm == "farneback":
 		method = cv2.calcOpticalFlowFarneback
 		params = [0.5, 3, 15, 3, 5, 1.2, 0] #default Farneback's algorithm parameters
-		frames, size = dense_optical_flow(method, video_root, video_name, params, to_gray=True)
+		frames, flows, size = dense_optical_flow(method, video_root, video_name, params, to_gray=True)
 
 	elif algorithm == "rlof":
 		method = cv2.optflow.calcOpticalFlowDenseRLOF
 		#method = cv2.estimateAffinePartial2D
-		frames, size = dense_optical_flow(method, video_root, video_name)
+		frames, flows, size = dense_optical_flow(method, video_root, video_name)
 
 	if args.save_vid:
 		save_name = f"{video_name}_"

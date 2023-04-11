@@ -11,6 +11,10 @@ def save_video_from_frames(video_name, save_path, frames, frame_size, algo_used,
 	#save_name = video_name.replace(og_ext, save_ext)
 
 	out = cv2.VideoWriter(os.path.join(save_path, save_name), fourcc, 30, frame_size, True)
+	count = 0
 	for i in frames:
+		
 		out.write(i)
+		print(f'Writing frame {count}')
+		count += 1
 	out.release()

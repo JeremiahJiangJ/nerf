@@ -4,11 +4,8 @@
     "\\data",
     "\\load",
     "\\models",
-    "\\options",
-    "\\scripts",
-    "\\scripts\\nerf",
-    "\\scripts\\nerfren",
     "\\utils"
   ],
+  "SelectedNode": "\\utils\\video_to_imgs.py",
   "PreviewInSolutionExplorer": false
 }

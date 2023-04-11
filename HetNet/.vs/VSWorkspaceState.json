@@ -1,9 +1,13 @@
 {
   "ExpandedNodes": [
     "",
+    "\\datasets",
+    "\\datasets\\mirroripad",
+    "\\datasets\\mirror_hetnet",
+    "\\datasets\\mirror_hetnet\\test",
     "\\models",
     "\\models\\MSD-model-best"
   ],
-  "SelectedNode": "\\infer.py",
+  "SelectedNode": "\\datasets",
   "PreviewInSolutionExplorer": false
 }
