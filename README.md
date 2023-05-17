@@ -1,4 +1,4 @@
-# nerf
+# NeRF
 
 Exploring NeRF and its variations
 
